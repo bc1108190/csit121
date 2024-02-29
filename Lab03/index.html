@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipe</title>
+	<link rel="stylesheet" href="recipe.css">
+</head>
+
+<body>
+<h1>Chicken soup recipe</h1>
+<!--<img class="img-soup"src="images/image.jpeg">-->
+
+<div class="img-soup"></div>
+
+ <h2>Yubraj BC</h2>
+<h3>Ingredients</h3>
+<p>1 (3 pound) whole chicken<br/>
+    
+    4 carrots, halved<br/>
+    
+    4 stalks celery, halved<br/>
+    
+    1 large onion, halved<br/>
+   
+    water to cover<br/>
+    
+    salt and pepper to taste<br/>
+    1 teaspoon chicken bouillon granules (Optional)</p>
+    <h2>Here's a brief overview of what you can expect when you make<br/> this easy chicken soup:</h2>
+    <p>1. Make the stock by boiling the chicken and veggies until the meat is falling off the bone.<br/>
+        2. Remove the chicken and cut into pieces (discard skin and bones).<br/>
+        3. Strain the vegetables (reserving the stock) and cut into pieces. Rinse the pot.<br/>
+        4. Return everything to the pot. Heat the soup through and season to taste.<br/>
+        
+        Optional: If you want chicken noodle soup, add cooked noodles to the pot just before serving.</p>
+    <p>This is my favorite chiken soup recipe. Because this is a short and easy to cook chicken soup,<br/> and when you use this recipe Iam sure your soup would be very delicious.</p>
+	<a href="https://www.allrecipes.com/recipe/26472/the-best-chicken-soup-ever/">Best Chicken Soup</a>
+	<img src="images/chickensoup.jpeg" alt="Chickensoup" width ="300"/> 
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
